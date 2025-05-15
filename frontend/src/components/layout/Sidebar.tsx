@@ -161,6 +161,49 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
       ],
     },
     {
+      icon: "bi-people-fill",
+      text: "Committee",
+      children: [
+        {
+          icon: "bi-database-fill",
+          text: "Main Entry",
+          children: [
+            {
+              icon: "bi-table",
+              text: "Committee Master",
+              path: "/dashboard/commiittee/Committee Master",
+              exact: true,
+            }
+          ],
+        },
+      ],
+    },
+    {
+      icon: "bi-calendar-event-fill",
+      text: "Events",
+      children: [
+        {
+          icon: "bi-database-fill",
+          text: "Master Entry",
+          children: [
+            {
+              icon: "bi-table",
+              text: "Event Type",
+              path: "/dashboard/Event/Event Type",
+              exact: true,
+            },
+            {
+              icon: "bi-person-vcard-fill",
+              text: "Event Master",
+              path: "/dashboard/Event/Event Master",
+              exact: true,
+            },
+          ],
+        },
+    
+      ],
+    },
+    {
       icon: "bi-building",
       text: "University",
       path: "/dashboard/master/university",

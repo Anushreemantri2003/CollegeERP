@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'faculty.apps.FacultyConfig',# Make sure this matches your app configuration
     'establishments.apps.EstablishmentsConfig',  # Add this line
     'exam.apps.ExamConfig',  # Add this line
+    'committee.apps.CommitteeConfig', 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
