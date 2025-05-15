@@ -230,6 +230,8 @@ class STUDENT_ROLL_NUMBER_DETAILS(AuditModel):
     ACADEMIC_YEAR = models.CharField(ACADEMIC_YEAR, max_length=10, db_column='ACADEMIC_YEAR')
     ROLL_NO = models.CharField(max_length=20, db_column='ROLLNO')
     SEMESTER = models.ForeignKey(SEMESTER, on_delete=models.PROTECT, db_column='SEMESTER_ID')
+    BATCH = models.IntegerField(db_column='BATCH', null=True, blank=True)
+    GUARDIAN = models.CharField(max_length=100, db_column='GUARDIAN', null=True, blank=True)
 
     class Meta:
         db_table = '"STUDENT"."STUDENT_ROLL_NUMBER_DETAILS"'

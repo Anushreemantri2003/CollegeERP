@@ -26,6 +26,9 @@ import StudentRollNo from "../StudentMaster/StudentRollNo";
 import StudentDocument from "../studentTransaction/StudentDocument";
 import CollegeExamTypeTableView from "../Exam/CollegeExamTypeTableView";
 import StudentReturnForm from "../StudentMaster/DocumentReturn"; // Corrected path or filename
+import CommitteeMasterForm from "../Committee/CommitteeMasterForm";
+import EventType from "../Event/EventType";
+import EventMaster from "../Event/EventMaster";
 
 
 
@@ -120,6 +123,9 @@ const SuperAdminDashboard = ({ user }: any) => {
             <Route path="/student-section" element={<AdmissionTable />} />
             <Route path="/student-section/document" element={<StudentDocument />} />
             <Route path="/exam/college-exam-type" element={<CollegeExamTypeTableView />} />
+            <Route path="/commiittee/Committee Master" element={<CommitteeMasterForm/>} />
+            <Route path="/Event/Event Master" element={<EventMaster/>} />
+            <Route path="/Event/Event TYpe" element={<EventType/>} />
           </Routes>
         </div>
       </div>
